@@ -47,7 +47,7 @@ export default function AutoFit({ children, maxScale = 1, minScale = 0.5, safety
   }, [recalc]);
 
   return (
-  <div ref={outerRef} className="relative w-full h-full overflow-hidden">
+  <div ref={outerRef} className="relative w-full h-full overflow-auto">
       <div
         ref={innerRef}
         style={{

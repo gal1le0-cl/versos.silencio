@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         {/* Fuente Basset Seven desde Adobe Fonts */}
         <link rel="stylesheet" href="https://use.typekit.net/tuj2jic.css" />
       </head>
-      <body className={`${inter.variable} font-sans bg-[#121418] text-black`}>
+      <body className={`${inter.variable} font-sans bg-[#121418] `}>
         {children}
       </body>
     </html>

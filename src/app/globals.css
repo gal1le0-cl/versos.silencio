@@ -8,6 +8,11 @@ body {
   @apply font-sans
 }
 
+@theme {
+    --text-news: #696969; 
+  
+  }
+
 .font-basset {
   font-family: "basset-seven", sans-serif;
 }
