@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata = {
-  title: "Versos en la Sombra",
+  title: "Versos del Silencio",
   description: "Periódico homenaje al exilio republicano español",
 };
 

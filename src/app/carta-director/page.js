@@ -1,10 +1,9 @@
 import Sidebar from "../components/Sidebar";
 import AutoFit from "../components/AutoFit";
 import Image from "next/image";
-import PhotoCollage from "../components/photo-collage"
 
 
-export default function CollagePage() {
+export default function CartaDirector() {
   return (
     <div className="flex justify-center items-center min-h-screen w-full bg-[#121418]">
       {/* Contenedor principal - tamaño fijo y centrado en la página */}
@@ -24,14 +23,13 @@ export default function CollagePage() {
               <div className="flex-1 flex flex-col overflow-auto">
                 <header className="px-4 py-5 flex-shrink-0">
                   <h1 className="font-basset text-4xl lg:text-[55px] leading-none">
-                    FRAGMENTOS DEL OLVIDO
+                    Carta al Director
                   </h1>
                 </header>
 
                 {/* Contenido principal */}
                 <div className="p-4 lg:p-6">
                   
-<PhotoCollage />
 
                  
                 </div>

@@ -14,16 +14,26 @@ function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
+                        <Link href="/carta-director" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
                             <span>Carta al <br /> Director</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
                         </Link>
                     </li>
+                    
+                    
                     <li>
-                        <Link href="/" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
-                            <span>Cartografía <br /> del silencio</span>
+                        <Link href="/fotopoemario" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
+                            <span>Fotopoemario</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/collage" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
+                            <span>Fragmentos <br /> del olvido</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
@@ -38,20 +48,12 @@ function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
-                            <span>Fotopoemario</span>
+                        <span className="flex items-center text-gray-400 gap-2 cursor-not-allowed opacity-50">
+                            <span>Cartografía <br /> del silencio</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/collage" className="flex items-center gap-2 hover:text-neutral-600 transition-colors">
-                            <span>Fragmentos <br /> del olvido</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>
-                        </Link>
+                        </span>
                     </li>
                 </ul>
             </nav>
