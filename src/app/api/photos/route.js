@@ -1,8 +1,6 @@
 export const runtime = 'edge';
 
 export async function GET() {
-  console.log("🚀 API /api/photos called");
-  
   try {
     const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
     const apiKey = process.env.CLOUDINARY_API_KEY;
@@ -19,7 +17,7 @@ export async function GET() {
     
     const searchParams = {
       expression: 'folder:collage',
-      sort_by: { "public_id": "asc" }, // ✅ Formato correcto: objeto en lugar de array
+      // Removemos sort_by temporalmente para que funcione
       max_results: 100
     };
 
@@ -36,7 +34,7 @@ export async function GET() {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("❌ Cloudinary API error:", response.status, errorText);
+      console.error("Cloudinary API error:", response.status, errorText);
       return new Response(
         JSON.stringify({ error: `Cloudinary API error: ${response.status}` }),
         { status: 500, headers: { "Content-Type": "application/json" } }
@@ -51,14 +49,12 @@ export async function GET() {
       alt: file.filename || `Foto ${index + 1}`,
     }));
 
-    console.log("✅ Returning photos:", photos.length);
-
     return new Response(JSON.stringify(photos), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
   } catch (error) {
-    console.error("❌ Error fetching photos:", error.message);
+    console.error("Error fetching photos:", error.message);
     return new Response(
       JSON.stringify({ error: "Error fetching photos" }),
       { status: 500, headers: { "Content-Type": "application/json" } }
