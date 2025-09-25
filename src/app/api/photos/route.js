@@ -1,20 +1,36 @@
-// Sin runtime export para que use Node.js por defecto en desarrollo
-import { v2 as cloudinary } from "cloudinary";
-
-cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
-});
+export const runtime = 'edge';
 
 export async function GET() {
   try {
-    const result = await cloudinary.search
-      .expression("folder:collage")
-      .sort_by("public_id", "asc")
-      .max_results(100)
-      .execute();
+    const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+    const apiKey = process.env.CLOUDINARY_API_KEY;
+    const apiSecret = process.env.CLOUDINARY_API_SECRET;
 
+    const searchUrl = `https://api.cloudinary.com/v1_1/${cloudName}/resources/search`;
+    
+    const searchParams = {
+      expression: 'folder:collage',
+      sort_by: [['public_id', 'asc']],
+      max_results: 100
+    };
+
+    const credentials = btoa(`${apiKey}:${apiSecret}`);
+
+    const response = await fetch(searchUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Basic ${credentials}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(searchParams),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Cloudinary API error: ${response.status}`);
+    }
+
+    const result = await response.json();
+    
     const photos = result.resources.map((file, index) => ({
       id: index + 1,
       publicId: file.public_id,
