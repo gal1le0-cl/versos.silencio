@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { v2 as cloudinary } from "cloudinary"
 
 cloudinary.config({
@@ -8,19 +10,18 @@ cloudinary.config({
 
 export async function GET() {
   try {
-    // 👇 Ajusta "collage" al nombre de la carpeta donde tengas las fotos
     const result = await cloudinary.search
-      .expression("folder:collage") // todas las imágenes dentro de /collage
+      .expression("folder:collage")
       .sort_by("public_id", "asc")
       .max_results(100)
       .execute()
-
+    
     const photos = result.resources.map((file, index) => ({
       id: index + 1,
-      publicId: file.public_id, // ej: "collage/DSCN5904_dsxbyl"
+      publicId: file.public_id,
       alt: file.filename || `Foto ${index + 1}`,
     }))
-
+    
     return new Response(JSON.stringify(photos), {
       status: 200,
       headers: { "Content-Type": "application/json" },
