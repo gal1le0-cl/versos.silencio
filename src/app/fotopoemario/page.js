@@ -1,7 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import AutoFit from "../components/AutoFit";
-import Image from "next/image";
-
+import SimplePDFDisplay from "../components/SimplePDFDisplay";
 
 export default function Fotopoemario() {
   return (
@@ -29,9 +28,7 @@ export default function Fotopoemario() {
 
                 {/* Contenido principal */}
                 <div className="p-4 lg:p-6">
-                  
-
-                 
+                  <SimplePDFDisplay pdfUrl="/fotopoemario-v1.pdf" />
                 </div>
               </div>
             </div>
