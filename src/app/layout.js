@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/tuj2jic.css" />
       </head>
       <body className={`${inter.variable} font-sans bg-[#121418] `}>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

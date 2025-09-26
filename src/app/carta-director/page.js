@@ -7,7 +7,7 @@ export default function CartaDirector() {
   return (
     <div className="flex justify-center items-center min-h-screen w-full bg-[#121418]">
       {/* Contenedor principal - tamaño fijo y centrado en la página */}
-      <main className="bg-neutral-100 max-w-[1200px] w-[95%] lg:w-[85%] overflow-auto max-h-none lg:max-h-[90vh] lg:h-auto rounded-sm">
+      <main className="bg-neutral-100 max-w-[1100px] w-[90%] lg:w-[80%] overflow-auto max-h-none lg:max-h-[90vh] lg:h-auto rounded-sm mx-4">
         <AutoFit maxScale={1} minScale={0.7} safety={0.98}>
           <div className="flex flex-col w-full">
             {/* Barra de tareas arriba - móvil y tablet vertical */}
@@ -28,12 +28,12 @@ export default function CartaDirector() {
                 </header>
 
                 {/* Contenido principal */}
-                <div className="p-4 lg:p-6">
+                <div className="p-4 lg:p-6 px-6 lg:px-12">
                   {/* Introducción del proyecto */}
-                  <article className="max-w-4xl">
+                  <article className="max-w-3xl mx-auto">
                     <div className="flex items-center gap-2 mb-4">
                       <span className="w-3 h-3 bg-black rounded-full inline-block" />
-                      <h2 className="font-bold text-lg">El Propósito de &ldquo;Versos del Silencio&rdquo;</h2>
+                      <h2 className="font-bold text-lg">Propósito de &ldquo;Versos del Silencio&rdquo;</h2>
                     </div>
                     
                     {/* Línea divisoria */}
@@ -41,7 +41,7 @@ export default function CartaDirector() {
 
                     <div className="space-y-6 text-[#696969] leading-relaxed">
                       <p className="text-justify">
-                        Estimado Director,
+                        Bienvenidos!
                       </p>
                       
                       <p className="text-justify">
@@ -100,19 +100,19 @@ export default function CartaDirector() {
                       </h3>
                       <div className="space-y-3 text-sm text-[#696969]">
                         <p>
-                          <strong>Año de creación:</strong> 2024-2025
+                          <strong>Año de creación:</strong> 2025
                         </p>
                         <p>
                           <strong>Disciplinas:</strong> Fotografía documental, Poesía contemporánea, Archivo digital
                         </p>
                         <p>
-                          <strong>Temática:</strong> Exilio republicano español, Memoria histórica, Resistencia democrática
+                          <strong>Temática:</strong> Exilio republicano español, Memoria histórica, Silencio y opresión.
                         </p>
                         <p>
-                          <strong>Formato:</strong> Periódico digital interactivo, Fotopoemario multimedia
+                          <strong>Formato:</strong> Periódico digital, interactivo, Fotopoemario Físico y Digital. Servidores sostenibles.
                         </p>
                         <p>
-                          <strong>Objetivo:</strong> Preservar y transmitir la memoria del exilio republicano a través del arte y la literatura, estableciendo puentes entre pasado y presente para fortalecer la conciencia democrática contemporánea.
+                          <strong>Objetivo:</strong> Hacer memoria.
                         </p>
                       </div>
                     </div>
