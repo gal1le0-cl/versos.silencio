@@ -9,11 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.5.4",
     "autoprefixer": "^10.4.21",
     "cloudinary": "^2.7.0",
     "firebase": "^12.3.0",
     "framer-motion": "^12.23.12",
-    "next": "15.5.0",
+    "next": "^15.5.4",
     "next-cloudinary": "^6.16.0",
     "pdfjs-dist": "^5.4.149",
     "postcss": "^8.5.6",
