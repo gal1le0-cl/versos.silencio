@@ -323,6 +323,8 @@ export default function Home() {
           </div>
         </AutoFit>
       </main>
+      
+      {/* Debugger solo visible en desarrollo */}
     </div>
   );
 }

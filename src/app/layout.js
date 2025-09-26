@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { GoogleTagManager } from '@next/third-parties/google'
-import GoogleAnalytics from "./components/GoogleAnalytics";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -16,12 +15,10 @@ export default function RootLayout({ children }) {
       <head>
         {/* Fuente Basset Seven desde Adobe Fonts */}
         <link rel="stylesheet" href="https://use.typekit.net/tuj2jic.css" />
-                <GoogleAnalytics />
-
       </head>
       <body className={`${inter.variable} font-sans bg-[#121418] `}>
         {children}
-              <GoogleTagManager gtmId="G-3H2LGZQ9NE" />
+        <GoogleAnalytics gaId="G-3H2LGZQ9NE" />
       </body>
     </html>
   );
