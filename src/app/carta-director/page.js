@@ -82,11 +82,7 @@ export default function CartaDirector() {
                         <span className="text-sm">Director y Editor de &ldquo;Versos del Silencio&rdquo;</span>
                       </p>
 
-                      <div className="mt-8 p-4 bg-neutral-50 border-l-4 border-neutral-400">
-                        <p className="text-sm italic">
-                          &ldquo;La memoria es la única victoria posible contra el tiempo y la muerte. En cada verso rescatado, en cada imagen preservada, late el corazón de una España que se niega a desaparecer en el olvido.&rdquo;
-                        </p>
-                      </div>
+                      
                     </div>
 
                     {/* Línea divisoria final */}

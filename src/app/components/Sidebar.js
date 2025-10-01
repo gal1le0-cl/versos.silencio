@@ -105,19 +105,15 @@ function Sidebar() {
                     <span className="w-3 h-3 bg-black inline-block" />
                     Traducir a:
                 </h3>
-                <div className="flex gap-2 mt-2">
-                    <button 
-                        className="w-6 h-4 bg-black hover:ring-1 hover:ring-offset-1 hover:ring-black transition-all"
-                        onClick={() => trackClick('translate_option_1', 'sidebar_footer')}
-                    />
-                    <button 
-                        className="w-6 h-4 bg-gray-400 hover:ring-1 hover:ring-offset-1 hover:ring-black transition-all"
-                        onClick={() => trackClick('translate_option_2', 'sidebar_footer')}
-                    />
-                    <button 
-                        className="w-6 h-4 bg-gray-600 hover:ring-1 hover:ring-offset-1 hover:ring-black transition-all"
-                        onClick={() => trackClick('translate_option_3', 'sidebar_footer')}
-                    />
+                <div className="mt-2">
+                    <div className="text-sm text-gray-500 italic">
+                        Próximamente
+                    </div>
+                    <div className="flex gap-2 mt-1 opacity-30">
+                        <div className="w-6 h-4 bg-black"></div>
+                        <div className="w-6 h-4 bg-gray-400"></div>
+                        <div className="w-6 h-4 bg-gray-600"></div>
+                    </div>
                 </div>
             </div>
         </div>
