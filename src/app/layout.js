@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Fuente Basset Seven desde Adobe Fonts */}
         <link rel="stylesheet" href="https://use.typekit.net/tuj2jic.css" />
+        <meta name="msvalidate.01" content="CA6E43159E15DF77E781EE98ADD442BD" />
       </head>
       <body className={`${inter.variable} font-sans bg-[#121418] `}>
         {children}
