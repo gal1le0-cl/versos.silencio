@@ -41,23 +41,23 @@ export default function CartaDirector() {
 
                     <div className="space-y-6 text-[#696969] leading-relaxed">
                       <p className="text-justify">
-                        Bienvenidos!
+                        Bienvenidos a tod@s!
                       </p>
                       
                       <p className="text-justify">
-                        Le escribo para presentarle &ldquo;Versos del Silencio&rdquo;, un proyecto que nace desde la necesidad urgente de preservar y honrar la memoria del exilio republicano español. En tiempos donde las narrativas históricas corren el riesgo de ser simplificadas o silenciadas, consideramos fundamental crear un espacio que dialogue con la complejidad de nuestra historia reciente.
+                        Les escribo para presentarles &ldquo;Versos del Silencio&rdquo;, un proyecto que nace desde la necesidad de preservar y honrar la memoria del exilio republicano español. En tiempos donde las narrativas históricas corren el riesgo de ser silenciadas, consideramos fundamental crear un espacio que dialogue con la complejidad de nuestra historia reciente y no olvidada.
                       </p>
 
                       <p className="text-justify">
-                        Este proyecto multimedia combina fotografía, poesía y archivo documental para construir un relato fragmentado pero profundamente humano sobre el desarraigo, la resistencia y la memoria colectiva. No pretendemos ser una lección de historia tradicional, sino un ejercicio de memoria activa que interpela al presente desde las voces del pasado.
+                        Este proyecto, representa el mundo de Ruta al Exilio. La multimedia combinada con la fotografía, poesía y próximamente un archivo para construir un relato sensible sobre el olvidar, la resistencia y la memoria colectiva. No pretendemos ser una lección de historia tradicional, sino un ejercicio de memoria activa y reflexión que representa al presente desde las voces del pasado.
                       </p>
 
                       <p className="text-justify">
-                        El fotopoemario que presentamos no ilustra meramente acontecimientos históricos; los interroga, los contradice, los abraza. Las imágenes —algunas históricas, otras intervenidas— dialogan con versos que surgen desde el corazón de la experiencia del exilio. Juntos conforman un archivo emocional que explora las múltiples dimensiones del destierro: la pérdida, la esperanza, la resistencia, la identidad fragmentada.
+                        El fotopoemario que presentamos no ilustra acontecimientos históricos; los abraza a través de versos de antiguos escritores republicanos, y versos del autor. Las imágenes (todas realizadas en la ruta de 2025) dialogan con versos que surgen desde el corazón de la experiencia del exilio. Juntos conforman un archivo emocional que explora las múltiples dimensiones del destierro: la pérdida, la esperanza, la resistencia y la identidad.
                       </p>
 
                       <p className="text-justify">
-                        &ldquo;Fragmentos del olvido&rdquo;, nuestra galería de imágenes en blanco y negro, documenta la ruta del exilio republicano a través de una mirada contemporánea. Cada fotografía es un testimonio, cada encuadre una pregunta sobre lo que permanece y lo que se desvanece en el tiempo.
+                        &ldquo;Fragmentos del olvido&rdquo;, nuestra galería o collage de imágenes en blanco y negro, documenta la ruta del exilio republicano a través de una mirada contemporánea. Cada fotografía es un testimonio, cada encuadre una pregunta sobre lo que permanece y lo que se desvanece en el tiempo.
                       </p>
 
                       <p className="text-justify">
@@ -65,11 +65,11 @@ export default function CartaDirector() {
                       </p>
 
                       <p className="text-justify">
-                        Este periódico digital nace como testimonio de una España que no se resigna, que no olvida, que no claudica. Somos herederos de la República, no por nostalgia romántica, sino por convicción política. Porque creemos en la justicia social, en la soberanía popular, en la dignidad de la ley frente al capricho del poder.
+                        Este periódico digital ambientado, nace como testimonio de una España que no se resigna, que no olvida, que no perdona. Somos herederos de la República, no por nostalgia romántica, sino por convicción política. Porque creemos en la justicia social, en la soberanía popular, en la dignidad de la ley frente al capricho del poder.
                       </p>
 
                       <p className="text-justify">
-                        Le invitamos a acompañarnos en este recorrido por los diferentes lugares del exilio, explorando tanto la geografía física como la emocional de quienes tuvieron que reconstruir sus vidas lejos de la patria. A través de la fotografía, la poesía y el testimonio personal, &ldquo;Versos del Silencio&rdquo; se convierte en un puente entre generaciones, una forma de hacer presente lo aparentemente ausente.
+                        Le invitamos a acompañarnos en este recorrido por los diferentes lugares del exilio, explorando tanto la geografía física como la emocional de quienes tuvieron que reconstruir sus vidas lejos de su casa. A través de la fotografía, la poesía y el testimonio personal, &ldquo;Versos del Silencio&rdquo; se convierte en un puente entre generaciones, una forma de hacer presente lo aparentemente ausente.
                       </p>
 
                       <p className="text-justify">
