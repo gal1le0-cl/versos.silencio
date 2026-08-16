@@ -42,3 +42,10 @@ next-env.d.ts
 
 # idea
 /.idea
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
