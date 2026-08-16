@@ -115,6 +115,16 @@ function Sidebar() {
                         <div className="w-6 h-4 bg-gray-600"></div>
                     </div>
                 </div>
+                <div className="mt-3">
+                    <Link
+                        href="https://clogy.net/legal"
+                        className="inline-block text-sm   text-gray-500 italic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Legal
+                    </Link>
+                </div>
             </div>
         </div>
     );
