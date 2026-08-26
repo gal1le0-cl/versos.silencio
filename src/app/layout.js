@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
-import CookieBannerClient from './components/CookieBannerClient'
+import CookieBanner from './components/CookieBanner'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
